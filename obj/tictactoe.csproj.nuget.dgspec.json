@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n1r7y\\source\\repos\\tictactoe\\tictactoe\\tictactoe.csproj": {}
+    "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n1r7y\\source\\repos\\tictactoe\\tictactoe\\tictactoe.csproj": {
+    "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n1r7y\\source\\repos\\tictactoe\\tictactoe\\tictactoe.csproj",
+        "projectUniqueName": "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj",
         "projectName": "tictactoe",
-        "projectPath": "C:\\Users\\n1r7y\\source\\repos\\tictactoe\\tictactoe\\tictactoe.csproj",
+        "projectPath": "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj",
         "packagesPath": "C:\\Users\\n1r7y\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n1r7y\\source\\repos\\tictactoe\\tictactoe\\obj\\",
+        "outputPath": "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

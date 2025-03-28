@@ -82,10 +82,14 @@ namespace tictactoe
         {
 
         }
-        
+
         private void buttonRestart_Click_1(object sender, EventArgs e)
         {
             Application.Restart();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+                    }
     }
 }

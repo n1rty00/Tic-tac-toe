@@ -1,0 +1,2 @@
+C:\Users\n1r7y\Desktop\Tic-tac-toe-main\bin\Release\net8.0-windows\publish\win-x86\tictactoe.pdb
+C:\Users\n1r7y\Desktop\Tic-tac-toe-main\bin\Release\net8.0-windows\publish\win-x86\tictactoe.exe

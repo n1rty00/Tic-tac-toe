@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ODHMS4ckWRQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\n1r7y\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.14\\microsoft.net.illink.tasks.8.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
