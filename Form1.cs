@@ -25,7 +25,13 @@ namespace tictactoe
                     Thread.Sleep(300);
                     goto player;
                 case 0:
+                    int attempts = 0;
                 Select:
+                    if (attempts == 100)
+                    {
+                        break;
+                    }
+                    attempts++;
                     var index = random.Next(9);
 
                     if (index == 0)
