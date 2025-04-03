@@ -11,8 +11,10 @@ namespace tictactoe
             player = 1;
             label1.Text = "Текущий ход,игрок 1";
         }
+        private Random random = new Random();
         private void button1_Click(object sender, EventArgs e)
         {
+        player:
             switch (player)
             {
                 case 1:
@@ -20,10 +22,97 @@ namespace tictactoe
                     sender.GetType().GetProperty("Enabled").SetValue(sender, false);
                     player = 0;
                     label1.Text = "Текущий ход,игрок 2";
-                    break;
+                    Thread.Sleep(300);
+                    goto player;
                 case 0:
-                    sender.GetType().GetProperty("Text").SetValue(sender, "o");
-                    sender.GetType().GetProperty("Enabled").SetValue(sender, false);
+                Select:
+                    var index = random.Next(9);
+
+                    if (index == 0)
+                    {
+
+                        if (button1.Enabled == true)
+                        {
+                            button1.Text = "o";
+                            button1.Enabled = false;
+                        }
+                        else
+                        {
+                            goto Select;
+                        }
+                    }
+                    if (index == 1)
+                    {
+                        if (button2.Enabled == true)
+                        {
+                            button2.Text = "o";
+                            button2.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
+                    if (index == 2)
+                    {
+                        if (button3.Enabled == true)
+                        {
+                            button3.Text = "o";
+                            button3.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
+                    if (index == 3)
+                    {
+                        if (button4.Enabled == true)
+                        {
+                            button4.Text = "o";
+                            button4.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
+                    if (index == 4)
+                    {
+                        if (button5.Enabled == true)
+                        {
+                            button5.Text = "o";
+                            button5.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
+                    if (index == 5)
+                    {
+                        if (button6.Enabled == true)
+                        {
+                            button6.Text = "o";
+                            button6.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
+                    if (index == 6)
+                    {
+                        if (button7.Enabled == true)
+                        {
+                            button7.Text = "o";
+                            button7.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
+                    if (index == 7)
+                    {
+                        if (button8.Enabled == true)
+                        {
+                            button8.Text = "o";
+                            button8.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
+                    if (index == 8)
+                    {
+                        if (button9.Enabled == true)
+                        {
+                            button9.Text = "o";
+                            button9.Enabled = false;
+                        }
+                        else { goto Select; }
+                    }
                     player = 1;
                     label1.Text = "Текущий ход,игрок 1";
                     break;

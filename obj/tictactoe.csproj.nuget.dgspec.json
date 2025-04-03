@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj": {}
+    "C:\\Users\\n1r7y\\Source\\Repos\\tic-tac-toe\\tictactoe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj": {
+    "C:\\Users\\n1r7y\\Source\\Repos\\tic-tac-toe\\tictactoe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj",
+        "projectUniqueName": "C:\\Users\\n1r7y\\Source\\Repos\\tic-tac-toe\\tictactoe.csproj",
         "projectName": "tictactoe",
-        "projectPath": "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\tictactoe.csproj",
+        "projectPath": "C:\\Users\\n1r7y\\Source\\Repos\\tic-tac-toe\\tictactoe.csproj",
         "packagesPath": "C:\\Users\\n1r7y\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n1r7y\\Desktop\\Tic-tac-toe-main\\obj\\",
+        "outputPath": "C:\\Users\\n1r7y\\Source\\Repos\\tic-tac-toe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
