@@ -40,11 +40,15 @@
             label1 = new Label();
             buttonRestart = new Button();
             panel1 = new Panel();
+            friends = new Button();
+            buttonAI = new Button();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
             button1.BackColor = Color.Pink;
+            button1.Enabled = false;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 25F);
             button1.Location = new Point(53, 62);
@@ -58,6 +62,7 @@
             // button2
             // 
             button2.BackColor = Color.Pink;
+            button2.Enabled = false;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft Sans Serif", 25F);
             button2.Location = new Point(223, 62);
@@ -71,6 +76,7 @@
             // button3
             // 
             button3.BackColor = Color.Pink;
+            button3.Enabled = false;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Microsoft Sans Serif", 25F);
             button3.Location = new Point(393, 62);
@@ -84,6 +90,7 @@
             // button4
             // 
             button4.BackColor = Color.Pink;
+            button4.Enabled = false;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Microsoft Sans Serif", 25F);
             button4.Location = new Point(53, 250);
@@ -97,9 +104,10 @@
             // button6
             // 
             button6.BackColor = Color.Pink;
+            button6.Enabled = false;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Microsoft Sans Serif", 25F);
-            button6.Location = new Point(393, 250);
+            button6.Location = new Point(389, 249);
             button6.Margin = new Padding(5, 6, 5, 6);
             button6.Name = "button6";
             button6.Size = new Size(159, 176);
@@ -110,6 +118,7 @@
             // button5
             // 
             button5.BackColor = Color.Pink;
+            button5.Enabled = false;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Microsoft Sans Serif", 25F);
             button5.Location = new Point(223, 250);
@@ -123,6 +132,7 @@
             // button7
             // 
             button7.BackColor = Color.Pink;
+            button7.Enabled = false;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Microsoft Sans Serif", 25F);
             button7.Location = new Point(53, 438);
@@ -136,6 +146,7 @@
             // button8
             // 
             button8.BackColor = Color.Pink;
+            button8.Enabled = false;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Microsoft Sans Serif", 25F);
             button8.Location = new Point(223, 438);
@@ -149,6 +160,7 @@
             // button9
             // 
             button9.BackColor = Color.Pink;
+            button9.Enabled = false;
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Microsoft Sans Serif", 25F);
             button9.Location = new Point(393, 438);
@@ -186,11 +198,34 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Controls.Add(friends);
+            panel1.Controls.Add(buttonAI);
+            panel1.Controls.Add(button6);
             panel1.Location = new Point(3, 0);
             panel1.Margin = new Padding(5, 6, 5, 6);
             panel1.Name = "panel1";
             panel1.Size = new Size(883, 698);
             panel1.TabIndex = 11;
+            // 
+            // friends
+            // 
+            friends.Location = new Point(641, 450);
+            friends.Name = "friends";
+            friends.Size = new Size(131, 40);
+            friends.TabIndex = 13;
+            friends.Text = "with friends";
+            friends.UseVisualStyleBackColor = true;
+            friends.Click += button11_Click;
+            // 
+            // buttonAI
+            // 
+            buttonAI.Location = new Point(641, 386);
+            buttonAI.Name = "buttonAI";
+            buttonAI.Size = new Size(131, 40);
+            buttonAI.TabIndex = 12;
+            buttonAI.Text = "with AI";
+            buttonAI.UseVisualStyleBackColor = true;
+            buttonAI.Click += button10_Click_1;
             // 
             // Form1
             // 
@@ -204,7 +239,6 @@
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button5);
-            Controls.Add(button6);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -213,6 +247,7 @@
             Margin = new Padding(5, 6, 5, 6);
             Name = "Form1";
             Load += Form1_Load;
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -231,5 +266,7 @@
         private Label label1;
         private Button buttonRestart;
         private Panel panel1;
+        private Button friends;
+        private Button buttonAI;
     }
 }
