@@ -48,6 +48,8 @@ namespace tictactoe
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            if (isGameOver) return;
+
             if (buttonAI.Text == "OK") //здесь я самым ущербным способом сделал выбор как хочется играть
             {
             player:
