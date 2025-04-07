@@ -28,14 +28,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\n1r7y\\Source\\Repos\\tic-tac-toe\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\n1r7y\\source\\repos\\tic-tac-toe\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\n1r7y\\Source\\Repos\\tic-tac-toe\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\n1r7y\\source\\repos\\tic-tac-toe\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAmwNkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAAANkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T06:31:09.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T06:31:09.248Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\n1r7y\\source\\repos\\tic-tac-toe\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAOwAAAAAAAAAAAAAAP4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAANkAAAAAAAAAAADwvxMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T05:36:04.825Z",
               "EditorCaption": ""
@@ -59,8 +58,7 @@
               "ToolTip": "C:\\Users\\n1r7y\\source\\repos\\tic-tac-toe\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T05:35:53.711Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-04-03T05:35:53.711Z"
             }
           ]
         }

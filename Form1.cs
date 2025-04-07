@@ -5,6 +5,8 @@ namespace tictactoe
     public partial class Form1 : Form
     {
         private int player;
+        private bool isGameOver;
+
         public Form1()
         {
             InitializeComponent();
@@ -14,7 +16,7 @@ namespace tictactoe
         private Random random = new Random();
         private void button10_Click_1(object sender, EventArgs e)
         {
-            buttonAI.Text = "OK";
+            buttonAI.Text = "OK"; //это я так включаю кнопки(я художник, я так вижу) 
             button1.Enabled = true;
             button2.Enabled = true;
             button3.Enabled = true;
@@ -46,7 +48,7 @@ namespace tictactoe
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (buttonAI.Text == "OK")
+            if (buttonAI.Text == "OK") //здесь я самым ущербным способом сделал выбор как хочется играть
             {
             player:
                 switch (player)
@@ -56,10 +58,15 @@ namespace tictactoe
                         sender.GetType().GetProperty("Enabled").SetValue(sender, false);
                         player = 0;
                         label1.Text = "Текущий ход,игрок 2";
-                        Thread.Sleep(300);
-                        goto player;
+                        chekwin();
+                        if (!isGameOver)
+                        {
+                            Thread.Sleep(300);
+                            goto player;
+                        }
+                        break;
                     case 0:
-                        int attempts = 0;
+                        int attempts = 0; //а вот это фиговина которая якобы искуственный интелект
                     Select:
                         if (attempts == 100)
                         {
@@ -155,9 +162,9 @@ namespace tictactoe
                         }
                         player = 1;
                         label1.Text = "Текущий ход,игрок 1";
+                        chekwin();
                         break;
                 }
-                chekwin();
             }
             if (friends.Text == "OK")
             {
@@ -178,60 +185,52 @@ namespace tictactoe
                         label1.Text = "Текущий ход,игрок 1";
                         break;
                 }
-            
-            chekwin();
-        }
-        }
-            private void chekwin()
-            {
-                if (button1.Text == button2.Text && button2.Text == button3.Text)
-                {
-                    if (button1.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button1.Text);
-                }
-                if (button4.Text == button5.Text && button5.Text == button6.Text)
-                {
-                    if (button4.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button4.Text);
-                }
-                if (button7.Text == button8.Text && button8.Text == button9.Text)
-                {
-                    if (button7.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button7.Text);
-                }
-                if (button1.Text == button4.Text && button4.Text == button7.Text)
-                {
-                    if (button1.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button1.Text);
-                }
-                if (button2.Text == button5.Text && button5.Text == button8.Text)
-                {
-                    if (button2.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button2.Text);
-                }
-                if (button3.Text == button6.Text && button6.Text == button9.Text)
-                {
-                    if (button3.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button3.Text);
-                }
-                if (button1.Text == button5.Text && button5.Text == button9.Text)
-                {
-                    if (button1.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button1.Text);
-                }
-                if (button3.Text == button5.Text && button5.Text == button7.Text)
-                {
-                    if (button3.Text != "")
-                        MessageBox.Show("Игра окончена! Победил игрок: " + button3.Text);
-                }
-                if (button1.Text != "" && button2.Text != "" && button3.Text != "" && button4.Text != "" && button5.Text != "" && button6.Text != "" && button7.Text != "" && button8.Text != "" && button9.Text != "")
-                {
-                    MessageBox.Show("Ничья!");
-                }
+
+                chekwin();
             }
-        
-        
-    
+        }
+        private void chekwin()
+        {
+            if (button1.Text == button2.Text && button2.Text == button3.Text && button1.Text != "")
+            {
+                gameOver(button1.Text);
+            }
+            if (button4.Text == button5.Text && button5.Text == button6.Text && button4.Text != "")
+                gameOver(button4.Text);
+            if (button7.Text == button8.Text && button8.Text == button9.Text && button7.Text != "")
+                gameOver(button7.Text);
+            if (button1.Text == button4.Text && button4.Text == button7.Text && button1.Text != "")
+                gameOver(button1.Text);
+            if (button2.Text == button5.Text && button5.Text == button8.Text && button2.Text != "")
+                gameOver(button2.Text);
+            if (button3.Text == button6.Text && button6.Text == button9.Text && button3.Text != "")
+                gameOver(button3.Text);
+            if (button1.Text == button5.Text && button5.Text == button9.Text && button1.Text != "")
+                gameOver(button1.Text);
+            if (button3.Text == button5.Text && button5.Text == button7.Text && button3.Text != "")
+                gameOver(button3.Text);
+            if (button1.Text == "" || button2.Text == "" || button3.Text == "" || button4.Text == "" || button5.Text == "" || button6.Text == "" || button7.Text == "" || button8.Text == "" || button9.Text == "")
+            {
+                return;
+            }
+            gameOver();
+        }
+
+        private void gameOver(string? winner = null)
+        {
+            if (winner == null)
+            {
+                MessageBox.Show("Ничья!");
+            }
+            else
+            {
+                MessageBox.Show($"Игра окончена! Победил игрок {winner}");
+            }
+
+            label1.Text = "Game over";
+            isGameOver = true;
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -242,14 +241,5 @@ namespace tictactoe
         {
             Application.Restart();
         }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-        }
-
-       
-
-       
-        
     }
 }

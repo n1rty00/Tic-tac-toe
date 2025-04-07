@@ -209,22 +209,24 @@
             // 
             // friends
             // 
-            friends.Location = new Point(641, 450);
+            friends.BackColor = Color.LightPink;
+            friends.Location = new Point(557, 438);
             friends.Name = "friends";
-            friends.Size = new Size(131, 40);
+            friends.Size = new Size(307, 40);
             friends.TabIndex = 13;
             friends.Text = "with friends";
-            friends.UseVisualStyleBackColor = true;
+            friends.UseVisualStyleBackColor = false;
             friends.Click += button11_Click;
             // 
             // buttonAI
             // 
-            buttonAI.Location = new Point(641, 386);
+            buttonAI.BackColor = Color.LightPink;
+            buttonAI.Location = new Point(556, 386);
             buttonAI.Name = "buttonAI";
-            buttonAI.Size = new Size(131, 40);
+            buttonAI.Size = new Size(308, 40);
             buttonAI.TabIndex = 12;
             buttonAI.Text = "with AI";
-            buttonAI.UseVisualStyleBackColor = true;
+            buttonAI.UseVisualStyleBackColor = false;
             buttonAI.Click += button10_Click_1;
             // 
             // Form1
