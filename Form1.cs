@@ -33,7 +33,7 @@ namespace tictactoe
         }
         private void button11_Click(object sender, EventArgs e)
         {
-            friends.Text = "OK";
+            friends.Text = "OK"; //здесь тоже самое, только для другой кнопочке
             button1.Enabled = true;
             button2.Enabled = true;
             button3.Enabled = true;
@@ -56,7 +56,7 @@ namespace tictactoe
                 switch (player)
                 {
                     case 1:
-                        sender.GetType().GetProperty("Text").SetValue(sender, "x");
+                        sender.GetType().GetProperty("Text").SetValue(sender, "x"); // это типо х ходит
                         sender.GetType().GetProperty("Enabled").SetValue(sender, false);
                         player = 0;
                         label1.Text = "Текущий ход,игрок 2";
@@ -168,20 +168,20 @@ namespace tictactoe
                         break;
                 }
             }
-            if (friends.Text == "OK")
+            if (friends.Text == "OK") // типо режим с друзьями(сделаный самым ущербным способом)
             {
             player:
                 switch (player)
                 {
                     case 1:
-                        sender.GetType().GetProperty("Text").SetValue(sender, "x");
+                        sender.GetType().GetProperty("Text").SetValue(sender, "x"); // 1 игрок
                         sender.GetType().GetProperty("Enabled").SetValue(sender, false);
                         player = 0;
                         label1.Text = "Текущий ход,игрок 2";
                         break;
 
                     case 0:
-                        sender.GetType().GetProperty("Text").SetValue(sender, "o");
+                        sender.GetType().GetProperty("Text").SetValue(sender, "o"); // 2 игрок
                         sender.GetType().GetProperty("Enabled").SetValue(sender, false);
                         player = 1;
                         label1.Text = "Текущий ход,игрок 1";
@@ -193,7 +193,7 @@ namespace tictactoe
         }
         private void chekwin()
         {
-            if (button1.Text == button2.Text && button2.Text == button3.Text && button1.Text != "")
+            if (button1.Text == button2.Text && button2.Text == button3.Text && button1.Text != "") // эта при каких условиях будет гаме овер
             {
                 gameOver(button1.Text);
             }
@@ -218,7 +218,7 @@ namespace tictactoe
             gameOver();
         }
 
-        private void gameOver(string? winner = null)
+        private void gameOver(string? winner = null) //это более гениальный способ выбора победившего по сравнению с прошлым
         {
             if (winner == null)
             {
@@ -232,7 +232,7 @@ namespace tictactoe
             label1.Text = "Game over";
             isGameOver = true;
 
-            button1.Enabled = false;
+            button1.Enabled = false; // кнопочке выключаются
             button2.Enabled = false;
             button3.Enabled = false;
             button4.Enabled = false;
@@ -244,12 +244,12 @@ namespace tictactoe
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e) //без понятия нафига оно мне
         {
 
         }
 
-        private void buttonRestart_Click_1(object sender, EventArgs e)
+        private void buttonRestart_Click_1(object sender, EventArgs e) // эта типа рестарт
         {
             Application.Restart();
         }
