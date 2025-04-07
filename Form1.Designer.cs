@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -47,10 +48,11 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Pink;
+            button1.BackColor = SystemColors.ActiveCaption;
             button1.Enabled = false;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 25F);
+            button1.ForeColor = SystemColors.Control;
             button1.Location = new Point(53, 62);
             button1.Margin = new Padding(5, 6, 5, 6);
             button1.Name = "button1";
@@ -61,10 +63,11 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.Pink;
+            button2.BackColor = SystemColors.ActiveCaption;
             button2.Enabled = false;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft Sans Serif", 25F);
+            button2.ForeColor = SystemColors.Control;
             button2.Location = new Point(223, 62);
             button2.Margin = new Padding(5, 6, 5, 6);
             button2.Name = "button2";
@@ -75,10 +78,11 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.Pink;
+            button3.BackColor = SystemColors.ActiveCaption;
             button3.Enabled = false;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Microsoft Sans Serif", 25F);
+            button3.ForeColor = SystemColors.Control;
             button3.Location = new Point(393, 62);
             button3.Margin = new Padding(5, 6, 5, 6);
             button3.Name = "button3";
@@ -89,10 +93,11 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.Pink;
+            button4.BackColor = SystemColors.ActiveCaption;
             button4.Enabled = false;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Microsoft Sans Serif", 25F);
+            button4.ForeColor = SystemColors.Control;
             button4.Location = new Point(53, 250);
             button4.Margin = new Padding(5, 6, 5, 6);
             button4.Name = "button4";
@@ -103,7 +108,7 @@
             // 
             // button6
             // 
-            button6.BackColor = Color.Pink;
+            button6.BackColor = SystemColors.ActiveCaption;
             button6.Enabled = false;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Microsoft Sans Serif", 25F);
@@ -117,10 +122,11 @@
             // 
             // button5
             // 
-            button5.BackColor = Color.Pink;
+            button5.BackColor = SystemColors.ActiveCaption;
             button5.Enabled = false;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Microsoft Sans Serif", 25F);
+            button5.ForeColor = SystemColors.Control;
             button5.Location = new Point(223, 250);
             button5.Margin = new Padding(5, 6, 5, 6);
             button5.Name = "button5";
@@ -131,10 +137,11 @@
             // 
             // button7
             // 
-            button7.BackColor = Color.Pink;
+            button7.BackColor = SystemColors.ActiveCaption;
             button7.Enabled = false;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Microsoft Sans Serif", 25F);
+            button7.ForeColor = SystemColors.Control;
             button7.Location = new Point(53, 438);
             button7.Margin = new Padding(5, 6, 5, 6);
             button7.Name = "button7";
@@ -145,10 +152,11 @@
             // 
             // button8
             // 
-            button8.BackColor = Color.Pink;
+            button8.BackColor = SystemColors.ActiveCaption;
             button8.Enabled = false;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Microsoft Sans Serif", 25F);
+            button8.ForeColor = SystemColors.Control;
             button8.Location = new Point(223, 438);
             button8.Margin = new Padding(5, 6, 5, 6);
             button8.Name = "button8";
@@ -159,10 +167,11 @@
             // 
             // button9
             // 
-            button9.BackColor = Color.Pink;
+            button9.BackColor = SystemColors.ActiveCaption;
             button9.Enabled = false;
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Microsoft Sans Serif", 25F);
+            button9.ForeColor = SystemColors.Control;
             button9.Location = new Point(393, 438);
             button9.Margin = new Padding(5, 6, 5, 6);
             button9.Name = "button9";
@@ -174,6 +183,8 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveCaption;
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(595, 62);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
@@ -183,21 +194,22 @@
             // 
             // buttonRestart
             // 
+            buttonRestart.BackColor = SystemColors.ActiveCaption;
             buttonRestart.FlatStyle = FlatStyle.Flat;
             buttonRestart.Font = new Font("Microsoft Sans Serif", 25F);
-            buttonRestart.ForeColor = Color.LavenderBlush;
+            buttonRestart.ForeColor = SystemColors.Control;
             buttonRestart.Location = new Point(595, 98);
             buttonRestart.Margin = new Padding(5, 6, 5, 6);
             buttonRestart.Name = "buttonRestart";
             buttonRestart.Size = new Size(264, 216);
             buttonRestart.TabIndex = 9;
             buttonRestart.Text = "Restart";
-            buttonRestart.UseVisualStyleBackColor = true;
+            buttonRestart.UseVisualStyleBackColor = false;
             buttonRestart.Click += buttonRestart_Click_1;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.BackColor = SystemColors.MenuHighlight;
             panel1.Controls.Add(friends);
             panel1.Controls.Add(buttonAI);
             panel1.Controls.Add(button6);
@@ -209,7 +221,8 @@
             // 
             // friends
             // 
-            friends.BackColor = Color.LightPink;
+            friends.BackColor = SystemColors.ActiveCaption;
+            friends.ForeColor = SystemColors.Control;
             friends.Location = new Point(557, 438);
             friends.Name = "friends";
             friends.Size = new Size(307, 40);
@@ -220,7 +233,8 @@
             // 
             // buttonAI
             // 
-            buttonAI.BackColor = Color.LightPink;
+            buttonAI.BackColor = SystemColors.ActiveCaption;
+            buttonAI.ForeColor = SystemColors.Control;
             buttonAI.Location = new Point(556, 386);
             buttonAI.Name = "buttonAI";
             buttonAI.Size = new Size(308, 40);
@@ -246,6 +260,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(5, 6, 5, 6);
             Name = "Form1";
             Load += Form1_Load;

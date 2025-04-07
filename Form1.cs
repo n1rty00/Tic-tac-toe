@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace tictactoe
 {
@@ -12,6 +13,9 @@ namespace tictactoe
             InitializeComponent();
             player = 1;
             label1.Text = "Текущий ход,игрок 1";
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            
         }
         private Random random = new Random();
         private void button10_Click_1(object sender, EventArgs e)
