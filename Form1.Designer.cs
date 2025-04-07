@@ -112,7 +112,7 @@
             button6.Enabled = false;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Microsoft Sans Serif", 25F);
-            button6.Location = new Point(389, 249);
+            button6.Location = new Point(421, 250);
             button6.Margin = new Padding(5, 6, 5, 6);
             button6.Name = "button6";
             button6.Size = new Size(159, 176);
@@ -213,17 +213,17 @@
             panel1.Controls.Add(friends);
             panel1.Controls.Add(buttonAI);
             panel1.Controls.Add(button6);
-            panel1.Location = new Point(3, 0);
+            panel1.Location = new Point(-28, 0);
             panel1.Margin = new Padding(5, 6, 5, 6);
             panel1.Name = "panel1";
-            panel1.Size = new Size(883, 698);
+            panel1.Size = new Size(914, 698);
             panel1.TabIndex = 11;
             // 
             // friends
             // 
             friends.BackColor = SystemColors.ActiveCaption;
             friends.ForeColor = SystemColors.Control;
-            friends.Location = new Point(557, 438);
+            friends.Location = new Point(588, 438);
             friends.Name = "friends";
             friends.Size = new Size(307, 40);
             friends.TabIndex = 13;
@@ -235,7 +235,7 @@
             // 
             buttonAI.BackColor = SystemColors.ActiveCaption;
             buttonAI.ForeColor = SystemColors.Control;
-            buttonAI.Location = new Point(556, 386);
+            buttonAI.Location = new Point(588, 392);
             buttonAI.Name = "buttonAI";
             buttonAI.Size = new Size(308, 40);
             buttonAI.TabIndex = 12;
